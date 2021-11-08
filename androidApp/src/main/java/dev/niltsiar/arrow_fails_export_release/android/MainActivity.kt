@@ -6,10 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import dev.niltsiar.arrow_fails_export_release.Greeting
 
 fun greet(): String {
-    return Greeting().greeting().fold(
-        ifLeft = { it },
-        ifRight = { it }
-    )
+    return Greeting().greeting()
 }
 
 class MainActivity : AppCompatActivity() {

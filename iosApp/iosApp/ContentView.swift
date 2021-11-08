@@ -2,10 +2,7 @@ import SwiftUI
 import shared
 
 struct ContentView: View {
-    let greet = Greeting().greeting().fold(
-        ifLeft: { message in message },
-        ifRight: { message in message }
-    ) as! String
+    let greet = Greeting().greeting()
     
 	var body: some View {
 		Text(greet)

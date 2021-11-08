@@ -30,7 +30,6 @@ kotlin {
             isStatic = false
             transitiveExport = false
 
-            export("io.arrow-kt:arrow-core:1.0.1")
             embedBitcode(org.jetbrains.kotlin.gradle.plugin.mpp.BitcodeEmbeddingMode.BITCODE)
         }
     }
@@ -38,7 +37,7 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                api("io.arrow-kt:arrow-core:1.0.1")
+                implementation("io.arrow-kt:arrow-core:1.0.1")
             }
         }
     }
